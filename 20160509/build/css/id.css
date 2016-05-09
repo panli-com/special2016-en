@@ -1,0 +1,237 @@
+@charset "UTF-8";
+body {
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+  font-family: Arial,Verdana,Helvetica,"simsun"; }
+
+p, h1, h2, h3, h4, h5, li, ul, dd, dt, dl, form {
+  margin: 0;
+  padding: 0; }
+
+img {
+  border: none; }
+
+ul li {
+  list-style: none; }
+
+a {
+  color: #333; }
+
+a:hover {
+  color: #FF0000; }
+
+textarea {
+  resize: none; }
+
+input, a {
+  outline: none; }
+
+.span20 {
+  height: 20px;
+  line-height: 20px;
+  display: block; }
+
+.left {
+  float: left;
+  display: block; }
+
+.right {
+  float: right;
+  display: block; }
+
+.clear {
+  clear: both; }
+
+.Panli_overlay {
+  moz-opacity: 0.56;
+  /* Moz + FF ͸����20% */
+  opacity: 0.56;
+  /*֧��CSS3����������FF 1.5Ҳ֧�֣�͸����20%*/
+  filter: alpha(opacity=56);
+  /* IE ͸����20% */
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #000;
+  height: 100%;
+  width: 100%;
+  _position: absolute;
+  z-index: 800;
+  display: none; }
+
+body {
+  font-family: 'Microsoft YaHei';
+  font-size: 12px; }
+
+#frame {
+  width: 100%;
+  background-color: #706bab;
+  overflow: hidden; }
+
+.header_banner {
+  width: 100%;
+  margin: 0 auto;
+  height: 600px; }
+
+.banner1 {
+  background: url(images/lovers_banner_02.jpg) no-repeat center;
+  height: 80px; }
+
+.banner2 {
+  background: url(images/lovers_banner_03.jpg) no-repeat center;
+  height: 80px; }
+
+.banner3 {
+  background: url(images/lovers_banner_04.jpg) no-repeat center;
+  height: 80px; }
+
+.banner4 {
+  background: url(images/lovers_banner_05.jpg) no-repeat center;
+  height: 80px; }
+
+.banner5 {
+  background: url(images/lovers_banner_06.jpg) no-repeat center;
+  height: 80px; }
+
+.banner6 {
+  background: url(images/lovers_banner_07.jpg) no-repeat center;
+  height: 80px; }
+
+.banner7 {
+  background: url(images/lovers_banner_08.jpg) no-repeat center;
+  height: 120px; }
+
+#content_inner {
+  width: 960px;
+  margin: 0 auto;
+  padding: 50px 0 0 0; }
+
+.Clothes_content {
+  margin-bottom: 15px;
+  clear: both;
+  overflow: hidden; }
+
+.Clothes_title {
+  background: url(images/lovers_Clothes.gif) no-repeat center center;
+  height: 54px; }
+
+.lovers_more {
+  background: url(images/lovers_more.gif) no-repeat;
+  width: 62px;
+  height: 13px;
+  position: relative;
+  left: 880px;
+  top: 25px;
+  display: block; }
+
+.Clothes_left {
+  float: left;
+  width: 340px; }
+
+.Clothes_left li {
+  width: 330px;
+  height: 510px;
+  background-color: #524e85;
+  display: block; }
+
+.Clothes_right {
+  float: right;
+  width: 620px; }
+
+.Clothes_right li {
+  width: 200px;
+  height: 250px;
+  margin: 0 10px 10px 0;
+  background-color: #524e85;
+  float: left;
+  display: block; }
+
+.pro_Price {
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  height: 50px;
+  display: block; }
+
+.pro_Price a {
+  color: #fff;
+  text-decoration: none; }
+
+.pro_Price a:hover {
+  color: #fff;
+  text-decoration: underline; }
+
+.pro_title {
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 12px;
+  height: 56px;
+  margin-bottom: 10px;
+  display: block; }
+
+.pro_title a {
+  color: #fff;
+  text-decoration: none; }
+
+.pro_title a:hover {
+  color: #fff;
+  text-decoration: underline; }
+
+.Clothes_right .pro_right {
+  margin: 0;
+  float: right;
+  display: block; }
+
+.Shoes_title {
+  background: url(images/lovers_Shoes.gif) no-repeat center center;
+  height: 54px; }
+
+.Shoes_left {
+  float: left;
+  width: 620px; }
+
+.Shoes_left li {
+  width: 200px;
+  height: 250px;
+  margin: 0 10px 10px 0;
+  background-color: #524e85;
+  float: left;
+  display: block; }
+
+.Shoes_right {
+  float: right;
+  width: 330px; }
+
+.Shoes_right li {
+  width: 330px;
+  height: 510px;
+  background-color: #524e85;
+  display: block; }
+
+.Shoes_left .pro_right {
+  margin: 0;
+  float: left;
+  display: block; }
+
+.Jewelry_title {
+  background: url(images/lovers_Jewelry.gif) no-repeat center center;
+  height: 54px; }
+
+.Watch_title {
+  background: url(images/lovers_Watch.gif) no-repeat center center;
+  height: 54px; }
+
+.Others_title {
+  background: url(images/lovers_Others.gif) no-repeat center center;
+  height: 54px; }
+
+.floor-sm {
+  clear: both;
+  overflow: hidden;
+  width: 640px; }

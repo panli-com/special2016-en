@@ -1,0 +1,203 @@
+body {
+	font-size:12px;
+	margin:0;
+	padding:0;
+	font-family:Arial,Verdana,Helvetica,"simsun";
+}
+p,h1,h2,h3,h4,h5,li,ul,dd,dt,dl,form {
+	margin:0;
+	padding:0;
+}
+img {
+	border:none;
+}
+ul li {
+	list-style:none;
+}
+a {
+	color:#333;
+}
+a:hover {
+	color:#FF0000;
+}
+textarea {
+	resize:none;
+}
+input,a {
+	outline:none;
+}
+.span20 {
+	height:20px;
+	line-height:20px;
+	display:block;
+}
+.left {
+	float:left;
+	display:block;
+}
+.right {
+	float:right;
+	display:block;
+}
+.clear {
+	clear:both;
+}
+.Panli_overlay {
+	moz-opacity:0.56;
+	/* Moz + FF 透明度20% */
+	opacity:0.56;
+	/*支持CSS3的浏览器（FF 1.5也支持）透明度20%*/
+	filter:alpha(opacity=56);
+	/* IE 透明度20% */
+	position:fixed;
+	bottom:0;
+	top:0;
+	left:0;
+	right:0;
+	background:#000;
+	height:100%;
+	width:100%;
+	_position:absolute;
+	z-index:800;
+	display:none;
+}
+body {
+	font-family:'Microsoft YaHei';
+	font-size:12px;
+}
+#frame {
+	width:100%;
+	background-color:#98edec;
+	overflow:hidden;
+}
+.header_banner {
+	width:100%;
+	margin:0 auto;
+	height:660px;
+}
+.banner1 {
+	background:url(images/Phone_Casing_02.jpg) no-repeat center;
+	height:80px;
+}
+.banner2 {
+	background:url(images/Phone_Casing_03.jpg) no-repeat center;
+	height:80px;
+}
+.banner3 {
+	background:url(images/Phone_Casing_04.jpg) no-repeat center;
+	height:80px;
+}
+.banner4 {
+	background:url(images/Phone_Casing_05.jpg) no-repeat center;
+	height:80px;
+}
+.banner5 {
+	background:url(images/Phone_Casing_06.jpg) no-repeat center;
+	height:80px;
+}
+.banner6 {
+	background:url(images/Phone_Casing_07.jpg) no-repeat center;
+	height:80px;
+}
+.banner7 {
+	background:url(images/Phone_Casing_08.jpg) no-repeat center;
+	height:80px;
+}
+.banner8 {
+	background:url(images/Phone_Casing_09.jpg) no-repeat center;
+	height:100px;
+}
+#content_inner {
+	width:960px;
+	margin:0 auto;
+	padding:45px 0 0 0;
+}
+.Phone_content {
+	margin-bottom:20px;
+	clear:both;
+	overflow:hidden;
+}
+.Snap-on_title {
+	background:url(images/Phone_Casing_12.gif) no-repeat center top;
+	height:55px;
+}
+.Phone_more {
+	background:url(images/Phone_Casing_15.gif) no-repeat;
+	width:58px;
+	height:17px;
+	position:relative;
+	left:880px;
+	top:20px;
+	display:block;
+}
+.Snap-on_pro {
+	//  float:left;
+    ul{
+        overflow: hidden;
+        clear: both;
+        width: 990px;
+    }
+}
+.Snap-on_pro li {
+	width:180px;
+	height:255px;
+	margin:0 15px 15px 0;
+	background-color:#5e6161;
+	float:left;
+	display:block;
+}
+.pro_Price {
+	color:#fff;
+	text-align:center;
+	font-size:14px;
+	line-height:20px;
+	height:50px;
+	display:block;
+}
+.pro_Price a {
+	color:#fff;
+	text-decoration:none;
+}
+.pro_Price a:hover {
+	color:#fff;
+	text-decoration:underline;
+}
+.pro_title {
+	color:#fff;
+	text-align:center;
+	font-size:18px;
+	line-height:24px;
+	padding:12px;
+	height:56px;
+	margin-bottom:10px;
+	display:block;
+}
+.pro_title a {
+	color:#fff;
+	text-decoration:none;
+}
+.pro_title a:hover {
+	color:#fff;
+	text-decoration:underline;
+}
+.Snap-on_pro .pro_right {
+	// margin:0;
+	// float:right;
+	display:block;
+}
+.Cover_title {
+	background:url(images/Phone_Casing_19.gif) no-repeat center top;
+	height:55px;
+}
+.Bumper_title {
+	background:url(images/Phone_Casing_20.gif) no-repeat center top;
+	height:55px;
+}
+.Bracket_title {
+	background:url(images/Phone_Casing_21.gif) no-repeat center top;
+	height:55px;
+}
+.Halter_title {
+	background:url(images/Phone_Casing_23.gif) no-repeat center top;
+	height:55px;
+}
