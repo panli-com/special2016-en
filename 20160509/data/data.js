@@ -224,14 +224,6 @@ var productData = [
     "简短商品名": "Watch"
   },
   {
-    "商品类型": "OTHERS",
-    "TB链接": "http://www.panlishop.com/Product/List.html?keyword=%E6%83%85%E4%BE%A3%E6%AC%BE",
-    "站内链接": null,
-    "商品价格(￥)": null,
-    "USA": null,
-    "简短商品名": null
-  },
-  {
     
     "TB链接": "https://item.taobao.com/item.htm?id=524722544817&ali_refid=a3_420434_1006:1103505962:N:情侣内裤:9711c8b89f8059549159f7dbaaab036f&ali_trackid=1_9711c8b89f8059549159f7dbaaab036f&spm=a230r.1.0.0.fqmbFK",
     "站内链接": "http://www.panlishop.com/product/detail/524722544817.html",
