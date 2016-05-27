@@ -29,7 +29,7 @@ gulp.task('sass', function() {
     return gulp.src('./'+ day +'/src/scss/id.scss')
         .pipe(sass({ style: 'expanded' }))
         .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
-        .pipe(gulp.dest('./'+ day +'/build/css'))
+        .pipe(gulp.dest('./'+ day +'/.tmp/css'))
         .pipe(rename(cssId+'.css'))
         .pipe(minifycss())
         .pipe(gulp.dest('./'+ day +'/build'))
@@ -90,7 +90,7 @@ gulp.task('homeHtml',function(){
 gulp.task('scripts',function(){
     return gulp.src('./'+ day +'/src/js/*.js')
         .pipe(concat('main.js'))
-        .pipe(gulp.dest('./'+ day +'/build/js'))
+        .pipe(gulp.dest('./'+ day +'/.tpm/js'))
         .pipe(rename({suffix: '.min'}))
         .pipe(uglify())
         .pipe(gulp.dest('./'+ day +'/build/js/'))
