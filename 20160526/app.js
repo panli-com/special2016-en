@@ -33,7 +33,7 @@ function FloorAll(data,imgHead,id){
             for(var i=1;i<data.length;i++){
                 var name = data[i]['简短商品名'],
                     price = data[i].USA,                  
-                    imgUrl = './build/images/products/'+imgHead+(i+0)+'.jpg',
+                    imgUrl = './build/css/images/products/'+imgHead+(i+0)+'.jpg',
                     proUrl = data[i].站内链接;
 
               

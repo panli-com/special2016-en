@@ -32,7 +32,7 @@ gulp.task('sass', function() {
         .pipe(gulp.dest('./'+ day +'/.tmp/css'))
         .pipe(rename(cssId+'.css'))
         .pipe(minifycss())
-        .pipe(gulp.dest('./'+ day +'/build'))
+        .pipe(gulp.dest('./'+ day +'/build/css/'))
         
         .pipe(reload({stream: true}))
         .pipe(notify({ message: 'Styles  task complete' }));
@@ -93,7 +93,7 @@ gulp.task('scripts',function(){
         .pipe(gulp.dest('./'+ day +'/.tpm/js'))
         .pipe(rename({suffix: '.min'}))
         .pipe(uglify())
-        .pipe(gulp.dest('./'+ day +'/build/js/'))
+        .pipe(gulp.dest('./'+ day +'/build/css/js/'))
         .pipe(reload({stream: true}))
         .pipe(notify({ message: 'Scripts task complete' }));
 
