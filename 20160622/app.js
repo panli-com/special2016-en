@@ -44,7 +44,7 @@ function FloorAll(data, imgHead, id) {
         str += ' <li class="product">' +
             '<div class="tupian">' +
             '<a class="box_tu" href="' + proUrl + '" target="_blank">' +
-            '<img title="product" src="' + imgUrl + '" alt="' + name + '" /></a>' +
+            '<img title="' + name + '" src="' + imgUrl + '" alt="' + name + '" /></a>' +
             '</div>' +
             '<a class="product_name" href="' + proUrl + '" target="_blank">' + name + '</a><strong class="price">$ ' + price + ' </strong>' +
             '<a class="buynow" href="' + proUrl + '" target="_blank"></a>' +
@@ -59,7 +59,7 @@ function FloorAll(data, imgHead, id) {
         proUrl = data[1].站内链接;
 
     var big = '<a class="big1" href="' + proUrl + '" target="_blank">' +
-        '<img title="product" src="' + imgUrl + '" alt="1" /></a>' +
+        '<img title="' + name + '" src="' + imgUrl + '" alt="' + name + '" /></a>' +
         '<a class="product_name" href="' + proUrl + '" target="_blank">' + name + '</a>' +
         '<strong class="price">$ ' + price + '</strong>' +
         '<a class="buynow" href="' + proUrl + '" target="_blank"></a>';
@@ -71,5 +71,5 @@ function FloorAll(data, imgHead, id) {
 
 
     $("#floor-" + id).find('ul').html(str);
-    
+
 }
