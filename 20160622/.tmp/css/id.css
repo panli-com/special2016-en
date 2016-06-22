@@ -1,0 +1,230 @@
+@charset "UTF-8";
+body {
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Verdana, Helvetica, "simsun"; }
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+li,
+ul,
+dd,
+dt,
+dl,
+form {
+  margin: 0;
+  padding: 0; }
+
+img {
+  border: none; }
+
+ul li {
+  list-style: none; }
+
+a {
+  color: #333; }
+
+a:hover {
+  color: #FF0000; }
+
+textarea {
+  resize: none; }
+
+input,
+a {
+  outline: none; }
+
+.Panli_overlay {
+  moz-opacity: 0.56;
+  /* Moz + FF ͸����20% */
+  opacity: 0.56;
+  /*֧��CSS3����������FF 1.5Ҳ֧�֣�͸����20%*/
+  filter: alpha(opacity=56);
+  /* IE ͸����20% */
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #000;
+  height: 100%;
+  width: 100%;
+  _position: absolute;
+  z-index: 800;
+  display: none; }
+
+body {
+  font-family: 'Microsoft YaHei';
+  font-size: 12px; }
+
+#frame {
+  width: 100%;
+  background-color: #88c3fb;
+  overflow: hidden; }
+
+.header_banner {
+  width: 100%;
+  margin: 0 auto;
+  height: 635px; }
+
+.banner1 {
+  background: url(images/Fruit_banner_02.jpg) no-repeat center;
+  height: 100px; }
+
+.banner2 {
+  background: url(images/Fruit_banner_03.jpg) no-repeat center;
+  height: 100px; }
+
+.banner3 {
+  background: url(images/Fruit_banner_04.jpg) no-repeat center;
+  height: 100px; }
+
+.banner4 {
+  background: url(images/Fruit_banner_05.jpg) no-repeat center;
+  height: 100px; }
+
+.banner5 {
+  background: url(images/Fruit_banner_06.jpg) no-repeat center;
+  height: 100px; }
+
+.banner6 {
+  background: url(images/Fruit_banner_07.jpg) no-repeat center;
+  height: 135px; }
+
+#content_inner {
+  width: 960px;
+  margin: 0 auto;
+  padding-bottom: 50px; }
+
+.Strawberry_title {
+  background: url(images/Fruit_banner_10.gif) no-repeat center;
+  height: 48px;
+  margin: 50px 0 20px 0; }
+
+.Watermelon_title {
+  background: url(images/Fruit_banner_29.gif) no-repeat center;
+  height: 40px;
+  margin: 40px 0 20px 0; }
+
+.Banana_title {
+  background: url(images/Fruit_banner_33.gif) no-repeat center;
+  height: 40px;
+  margin: 40px 0 20px 0; }
+
+.Cherry_title {
+  background: url(images/Fruit_banner_37.gif) no-repeat center;
+  height: 50px;
+  margin: 40px 0 20px 0; }
+
+.Others_title {
+  background: url(images/Fruit_banner_40.gif) no-repeat center;
+  height: 40px;
+  margin: 40px 0 20px 0; }
+
+.title_more {
+  display: block;
+  float: right;
+  position: relative;
+  background: url(images/Fruit_banner_13.gif) no-repeat;
+  width: 101px;
+  height: 37px;
+  top: 6px; }
+
+.show_box_inner {
+  width: 920px;
+  background: #fff;
+  padding: 20px 20px 0 20px;
+  overflow: hidden;
+  text-align: left; }
+
+.show_box_inner1 {
+  width: 930px;
+  background: #fff;
+  padding: 20px 20px 0 10px;
+  overflow: hidden;
+  text-align: left; }
+
+.box_left {
+  float: left;
+  width: 340px;
+  text-align: center;
+  position: relative; }
+
+.box_right {
+  float: right;
+  width: 580px; }
+
+.big1 {
+  display: block;
+  width: 340px;
+  height: 460px; }
+
+.product_name {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  line-height: 16px;
+  margin-top: 10px;
+  text-align: center; }
+
+.product_name:hover {
+  text-decoration: underline;
+  color: #333; }
+
+.price {
+  display: block;
+  color: #f84f83;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: normal;
+  margin-bottom: 6px;
+  text-align: center; }
+
+.box_left1 {
+  float: right;
+  width: 340px;
+  text-align: center;
+  position: relative; }
+
+.box_right1 {
+  float: left;
+  width: 580px; }
+
+.last .box_right {
+  width: 585px;
+  height: 282px;
+  float: none; }
+
+li.product {
+  width: 180px;
+  height: 280px;
+  float: left;
+  padding-left: 12px;
+  overflow: hidden;
+  position: relative;
+  text-align: center; }
+
+.tupian {
+  width: 180px;
+  height: 180px; }
+
+.box_tu {
+  display: block;
+  width: 180px;
+  height: 180px; }
+
+a.buynow {
+  display: block;
+  width: 100px;
+  height: 24px;
+  background: url(images/buy_button_03.jpg) no-repeat 0px 0px;
+  margin: 0 auto; }
+
+a.buynow:hover,
+a.buynow:active {
+  background: url(images/buy_button_03.jpg) no-repeat 0px -24px; }
