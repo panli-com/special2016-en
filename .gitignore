@@ -1,3 +1,20 @@
+node_modules
+
+Thumbs.db
+
 .idea
-/node_modules
- .DS_Store
+
+node_modules
+
+.DS_Store
+
+
+.DS_STORE
+
+static
+.module-cache
+*.log*
+
+.tmp
+
+npm-debug.log
