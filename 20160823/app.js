@@ -1,5 +1,5 @@
 function FloorList(data) {
-    var mlc = 8,
+    var mlc = 9,
         fl1 = [],
         fl2 = [],
         fl3 = [],
@@ -23,10 +23,10 @@ function FloorList(data) {
     }
 
 
-    FloorAll(fl0, 'strawberry', 1);
-    FloorAll(fl1, 'watermelon', 2);
-    FloorAll(fl2, 'banana', 3);
-    FloorAll(fl3, 'cherry', 4);
+    FloorAll(fl0, 'clothes', 1);
+    FloorAll(fl1, 'shoes', 2);
+    FloorAll(fl2, 'bag', 3);
+    FloorAll(fl3, 'hat', 4);
     FloorAll(fl4, 'others', 5);
 
 
@@ -35,41 +35,24 @@ function FloorList(data) {
 function FloorAll(data, imgHead, id) {
 
     var str = '';
-    for (var i = 2; i < data.length; i++) {
+    for (var i = 1; i < data.length; i++) {
         var name = data[i]['简短商品名'],
             price = data[i].USA,
             imgUrl = './build/css/images/products/' + imgHead + (i + 0) + '.jpg',
             proUrl = data[i].站内链接;
 
-        str += ' <li class="product">' +
-            '<div class="tupian">' +
-            '<a class="box_tu" href="' + proUrl + '" target="_blank">' +
-            '<img title="' + name + '" src="' + imgUrl + '" alt="' + name + '" /></a>' +
-            '</div>' +
-            '<a class="product_name" href="' + proUrl + '" target="_blank">' + name + '</a><strong class="price">$ ' + price + ' </strong>' +
-            '<a class="buynow" href="' + proUrl + '" target="_blank"></a>' +
-            '</li>'
 
+        str += '<li><a href="' + proUrl + '" target="_blank"><img src="' + imgUrl + '" width="220" height="210"></a>' +
+            '<div class="pro_Price"><a href="' + proUrl + '" target="_blank">' + name + '</a><br />' +
+            '<span>Price：$ ' + price + '</span></div>' +
+            '</li>';
 
     };
 
-    var name = data[1]['简短商品名'],
-        price = data[1].USA,
-        imgUrl = './build/css/images/products/' + imgHead + (1 + 0) + '.jpg',
-        proUrl = data[1].站内链接;
-
-    var big = '<a class="big1" href="' + proUrl + '" target="_blank">' +
-        '<img title="' + name + '" src="' + imgUrl + '" alt="' + name + '" /></a>' +
-        '<a class="product_name" href="' + proUrl + '" target="_blank">' + name + '</a>' +
-        '<strong class="price">$ ' + price + '</strong>' +
-        '<a class="buynow" href="' + proUrl + '" target="_blank"></a>';
 
 
-    $("#floor-" + id).find('.title_more').attr("href", data[0].TB链接)
+    $("#content_inner .Vacation_content").eq(id-1).find('.Vacation_more').attr("href", data[0].TB链接);
 
-    $("#floor-" + id).find('.bigbox').html(big);
-
-
-    $("#floor-" + id).find('ul').html(str);
+    $("#content_inner .Vacation_content").eq(id-1).find('ul').html(str);
 
 }
