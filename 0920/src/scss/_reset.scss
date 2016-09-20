@@ -1,0 +1,47 @@
+body {
+	font-size: 12px;
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Verdana, Helvetica, "simsun";
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+li,
+ul,
+dd,
+dt,
+dl,
+form {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	border: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+a {
+	color: #333;
+}
+
+a:hover {
+	color: #FF0000;
+}
+
+textarea {
+	resize: none;
+}
+
+input,
+a {
+	outline: none;
+}

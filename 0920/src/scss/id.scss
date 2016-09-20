@@ -1,0 +1,181 @@
+@import 'reset';
+
+.span20 {
+	height: 20px;
+	line-height: 20px;
+	display: block;
+}
+
+.left {
+	float: left;
+	display: block;
+}
+
+.right {
+	float: right;
+	display: block;
+}
+
+.clear {
+	clear: both;
+}
+
+.Panli_overlay {
+	opacity: 0.56;
+	filter: alpha(opacity=56);
+	position: fixed;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: #000;
+	height: 100%;
+	width: 100%;
+	_position: absolute;
+	z-index: 800;
+	display: none;
+}
+
+body {
+	font-family: 'Microsoft YaHei';
+	font-size: 12px;
+}
+
+#frame {
+	width: 100%;
+	background-color: #f0a28f;
+	overflow: hidden;
+	padding-bottom: 50px;
+}
+
+.header_banner {
+	width: 100%;
+	height: 421px;
+	position: relative;
+	.banner__bg_col_1{
+		position: absolute;
+		height: 272px;
+		left: 0;
+		right: 0;
+		background-color: #fef6d0;
+		z-index: 0;
+	}
+	.banner__bg_img{
+		position: absolute;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 421px;
+		z-index: 1;
+		background: url(images/banner.png) no-repeat top center;
+	}
+}
+
+
+#content_inner {
+	width: 960px;
+	margin: 0 auto;
+	padding: 0 0 0 0;
+}
+
+.content__floor{
+	margin-bottom: 25px;
+	.content_title{
+		position: relative;
+		background-repeat: no-repeat;
+		background-position: center center;
+		min-height: 40px;
+	}
+	.more{
+		position: absolute;
+		display: block;
+		text-decoration: none;
+		width: 76px;
+		height: 24px;
+		top: 50%;
+		margin-top: -12px;
+		right: 0;
+		background: url(images/more.png) no-repeat center center;
+		transition:.1s;
+		transition:All 0.1s ease-in-out;
+		&:hover{
+			transform:translate(-3px,0);
+		}
+	}
+}
+
+.content__floor_1{
+	.content_title{
+		height: 50px;
+		background-image: url(images/t1.png);
+	}
+}
+.content__floor_2{
+	.content_title{
+		height: 58px;
+		background-image: url(images/t2.png);
+	}
+}
+.content__floor_3{
+	.content_title{
+		height: 55px;
+		background-image: url(images/t3.png);
+	}
+}
+
+.content__list{
+	background: #FFF;
+	border-radius: 5px;
+	border: 3px solid #db5d66;
+	overflow: hidden;
+	padding-top: 16px;
+	padding-left: 15px;
+	a{
+		text-decoration: none;
+	}
+	ul{
+		clear: both;
+		overflow: hidden;
+		
+	}
+	li{
+		float: left;
+		width: 180px;
+		margin-bottom: 10px;
+		margin-right: 6px;
+		&:hover{
+			img{
+				transform:scale(1.02);
+			}
+		}
+	}
+	.thumb{
+		width: 180px;
+		height: 180px;
+		overflow: hidden;
+		text-align: center;
+
+		img{
+			transition:All 0.4s ease-in-out;
+			max-width: 100%;
+		}
+	}
+	.title,.buy-btn,.pro_price{
+		display: block;
+		text-align: center;
+	}
+	.title{
+		font-size: 14px;
+		line-height: 26px;
+	}
+	.pro_price{
+		color: #f4685a;
+		font-weight: 600;
+		font-size: 17px;
+	}
+	.buy-btn{
+		padding: 5px 0;
+		height: 30px;
+		background: url(images/buy.png) no-repeat center center;
+	}
+}

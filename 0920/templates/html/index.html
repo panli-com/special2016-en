@@ -1,0 +1,56 @@
+<!-- frame -->
+<div id="frame">
+  <div class="header_banner">
+    <div class="banner__bg_col_1">&nbsp;</div>
+    <div class="banner__bg_img">&nbsp;</div>
+  </div>
+  <div id="content_inner">
+    <div class="content__floor content__floor_1">
+      <div class="content_title">
+        <a href="#" title="more " target="_blank" class="more">&nbsp;</a>
+      </div>
+      <div class="content__list">
+        <ul>
+          <li>
+            <div class="thumb">
+              <a href="#" target="_blank">
+                <img src="<%= path %>css/images/products/KB1.jpg">
+              </a>
+            </div>
+            <div class="pro_info">
+              <a href="#" target="_blank" class="title">xxxxxxxxxxxxxxxxxx</a>
+              <span class="pro_price">$12.95</span>
+              <a href="" target="_blank" class="buy-btn">&nbsp;</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="content__floor content__floor_2">
+      <div class="content_title">
+        <a href="#" title="more " target="_blank" class="more">&nbsp;</a>
+      </div>
+      <div class="content__list">
+        <ul>
+        </ul>
+      </div>
+    </div>
+    <div class="content__floor content__floor_3">
+      <div class="content_title">
+        <a href="#" title="more " target="_blank" class="more">&nbsp;</a>
+      </div>
+      <div class="content__list">
+        <ul>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- frame end-->
+<script src="./data/data.js" charset="utf-8"></script>
+<script src="./app.js" charset="utf-8"></script>
+<script>
+  $(function() {
+     FloorList(productData);
+  });
+</script>

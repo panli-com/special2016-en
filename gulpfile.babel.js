@@ -1,7 +1,7 @@
 
 
-const day = '20160823';
-const ID = '76';
+const day = '0920';
+const ID = '77';
 const mincss = `${ID}.css`, minjs   = 'app.js', BuildPath = './build/';
 const HostPath = `http://img.panlidns.com/cms/en/special/css/${ID}/`;
                     
@@ -63,7 +63,10 @@ gulp.task('host', () => gulp.src(`./${day}/templates/html/html.html`)
 //编译Sass，Autoprefix及缩小化
 gulp.task('sass', () => gulp.src(`./${day}/src/scss/id.scss`)
     .pipe(sass({ style: 'expanded' }))
-    .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
+    .pipe(autoprefixer({
+        browsers: ['> 1%','Firefox <= 20',''],
+        cascade: false
+    }))
     .pipe(gulp.dest(`./${day}/.tmp/css`))
     .pipe(rename(mincss))
     .pipe(minifycss())
