@@ -1,29 +1,29 @@
-
-
-const day = '1130';
-const ID = '79';
-const mincss = `${ID}.css`, minjs   = 'app.js', BuildPath = './build/';
+const day = '1220';
+const ID = '80';
+const mincss = `${ID}.css`,
+    minjs = 'app.js',
+    BuildPath = './build/';
 const HostPath = `http://img.panlidns.com/cms/en/special/css/${ID}/`;
-                    
-import pkg          from './package.json';
-import gulp         from 'gulp';
-import sass         from 'gulp-sass';
-import minifycss    from 'gulp-minify-css';
-import concat       from 'gulp-concat';
-import uglify       from 'gulp-uglify';
-import rename       from 'gulp-rename';
-import notify       from 'gulp-notify';
-import saveLicense  from 'uglify-save-license';
+
+import pkg from './package.json';
+import gulp from 'gulp';
+import sass from 'gulp-sass';
+import minifycss from 'gulp-minify-css';
+import concat from 'gulp-concat';
+import uglify from 'gulp-uglify';
+import rename from 'gulp-rename';
+import notify from 'gulp-notify';
+import saveLicense from 'uglify-save-license';
 import autoprefixer from 'gulp-autoprefixer';
-import ejs          from "gulp-ejs";
-import header       from 'gulp-header';
-import replace      from 'gulp-replace';
+import ejs from "gulp-ejs";
+import header from 'gulp-header';
+import replace from 'gulp-replace';
 
 
 
 
 const browserSync = require('browser-sync').create();
-const reload      = browserSync.reload;
+const reload = browserSync.reload;
 
 
 
@@ -42,7 +42,7 @@ gulp.task('ejs', () => gulp.src(`./${day}/templates/index.ejs`)
     .pipe(ejs({
         title: pkg.description,
         mincss: mincss,
-        path:BuildPath,
+        path: BuildPath,
         time: new Date().getTime()
     }))
     .pipe(gulp.dest(`./${day}/.tmp`))
@@ -64,7 +64,7 @@ gulp.task('host', () => gulp.src(`./${day}/templates/html/html.html`)
 gulp.task('sass', () => gulp.src(`./${day}/src/scss/id.scss`)
     .pipe(sass({ style: 'expanded' }))
     .pipe(autoprefixer({
-        browsers: ['> 1%','Firefox <= 20',''],
+        browsers: ['> 1%', 'Firefox <= 20', ''],
         cascade: false
     }))
     .pipe(gulp.dest(`./${day}/.tmp/css`))
@@ -72,23 +72,23 @@ gulp.task('sass', () => gulp.src(`./${day}/src/scss/id.scss`)
     .pipe(minifycss())
     .pipe(header(banner, { pkg }))
     .pipe(gulp.dest(`./${day}/build/css/`))
-    .pipe(reload({stream: true}))
+    .pipe(reload({ stream: true }))
     .pipe(notify({ message: 'Styles  task complete' })));
 
 
-gulp.task('scripts',() => gulp.src(`./${day}/src/js/*.js`)
+gulp.task('scripts', () => gulp.src(`./${day}/src/js/*.js`)
     .pipe(concat('main.js'))
     .pipe(gulp.dest(`./${day}/.tmp/js`))
     .pipe(rename(minjs))
     .pipe(uglify())
     .pipe(header(banner, { pkg }))
     .pipe(gulp.dest(`./${day}/build/css/js/`))
-    .pipe(reload({stream: true}))
+    .pipe(reload({ stream: true }))
     .pipe(notify({ message: 'Scripts task complete' })));
 
-gulp.task('html',() => {
+gulp.task('html', () => {
     gulp.src(`./${day}/*.html`)
-        .pipe(reload({stream: true}))
+        .pipe(reload({ stream: true }))
 });
 
 
@@ -96,16 +96,16 @@ gulp.task('home', () => gulp.src('./home/scss/main.scss')
     .pipe(sass({ style: 'expanded' }))
     .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
     .pipe(gulp.dest('./home/css'))
-    .pipe(rename({suffix: '.min'}))
+    .pipe(rename({ suffix: '.min' }))
     .pipe(minifycss())
     .pipe(gulp.dest('./home/css/'))
-    .pipe(reload({stream: true}))
+    .pipe(reload({ stream: true }))
     .pipe(notify({ message: 'home style  task complete' })));
 
 
-gulp.task('homeHtml',() => {
+gulp.task('homeHtml', () => {
     gulp.src('./*.html')
-        .pipe(reload({stream: true}))
+        .pipe(reload({ stream: true }))
 });
 
 
@@ -123,15 +123,15 @@ gulp.task('dev', ['sass'], () => {
     gulp.watch('./home/scss/*.scss', ['home']);
     // 看守所有.js档
     gulp.watch(`./${day}/*.js`, ['scripts']);
-    gulp.watch(`./${day}/src/js/*.js`, ['html','scripts']);
+    gulp.watch(`./${day}/src/js/*.js`, ['html', 'scripts']);
 
     // 看守所有.html
     gulp.watch(`./${day}/*.html`).on('change', reload);
     gulp.watch('./*.html').on('change', reload);
 
-    gulp.watch([`./${day}/templates/*.html`, `./${day}/templates/*.ejs` ,`./${day}/templates/module/*.ejs`,`./${day}/templates/html/*.html`], ['ejs','host']);
+    gulp.watch([`./${day}/templates/*.html`, `./${day}/templates/*.ejs`, `./${day}/templates/module/*.ejs`, `./${day}/templates/html/*.html`], ['ejs', 'host']);
 
 });
 
 
-gulp.task('default', ['dev','sass','ejs']);
+gulp.task('default', ['dev', 'sass', 'ejs']);
